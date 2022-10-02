@@ -1,15 +1,9 @@
-
 :root {
     
-    --background-dark: #19212c;
-    --backgrounf-light: #28535D;
-    --primary-green: rgb(64, 219, 224);
+    --background-dark: #43a86d;
+    --backgrounf-light: #2e3d41;
+    --primary-green: rgb(2, 6, 7);
     --grey: #D6D6E3;
-    
-
-}
-h1{
-  text-align: center;
 }
 html {
     background-color: var(--background-dark);
@@ -17,15 +11,21 @@ html {
     height: 100%;
 }
 .container {
-    width: 800px;
+    width: 500px;
     margin: auto auto;
-    text-align: center;
 }
 
 
 main{
     text-align: center;
     margin-top: 100px;
+}
+lable,
+input{
+    display: block;
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
 }
 
 #check-button{
@@ -53,7 +53,4 @@ input{
     color: #22401B;
     border: none;
     margin: 0.5rem;
-}
-output{
-  text-align: center;
 }
