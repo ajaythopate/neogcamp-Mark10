@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cash Ragister</title>
-    <link rel="stylesheet" href="/style.css">
-</head>
-<body>
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Cash Register</title>
+  </head>
+  <body>
+    <main>
+    <div class="container" id="first">
+      <h1 class="heading">Cash Register Manager</h1>
+      <p class="description">
+        Enter the bill amount and cash given by the customer and know minimum
+        number of notes to return.
+      </p>
+      <label for="bill-amount">Bill Amount:</label>
+      <div><input id="bill-amount" type="number" /></div>
+      <div><button class="btn" id ="btn-next">Next</button></div>
+     </div>
 
-    <h1 class="heading">Cash Register Maneger</h1><br/>
 
-    <p class="decription">
-        Enter the bill amount cash given by the custmor and 
-        known minimum number of nots to retur
-
-    </p>
-    <label for="bill-amount">BILL AMOUNT</label></body></html></br>
-        <input id="bill-amount" tpe="text"></br></br>
-
-    <label for="cash-given">CASH GIVEN</label></br>
-         <input id="cash-given" type="text"></br></br>
-
-       <button id="check-button">check!</button> 
-
-       <p id="error-message"></p>
-
-      <table class="change-table"></br>
-            <caption> Return change-table</caption></br>
-
-           <tr>
-              <th>NO Of Notes</th></br>
-              <td></td>
-              <td class="no-of-notes"></td>
-              <td class="no-of-notes"></td>
-              <td class="no-of-notes"></td>
-              <td class="no-of-notes"></td>
-              <td class="no-of-notes"></td>
-              <td class="no-of-notes"></td>
-              <td class="no-of-notes"></td>
-
-              
-           </tr>
-           <tr>
-              <th>Note</th>
-              <td>2000</td>
-              <td>500</td>
-              <td>100</td>
-              <td>20</td>
-              <td>10</td>
-              <td>5</td>
-              <td>1</td>
-           </tr>
-        </table>
-       
+<div class="container" id="second">     
+  <label for="cash-given">Cash Given:</label>
+  <div><input id="cash-given" type="number" /></div>
+      <div>
+      <button id="check-button" type="button">Check</button>
+      </div>
 </div>
-<script src ="/index.js"></script>
-</body>
 
+      <p id="error-message"></p>
+
+      <div class="change-return" id="third">
+      <table class="table">
+        <caption>
+          Return Change :
+        </caption>
+        
+        <tr>
+          <th>No of Notes</th>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          <td class="no-of-notes"></td>
+          
+        </tr>
+        <tr>
+          <th>Note</th>
+          <td>2000</td>
+          <td>500</td>
+          <td>100</td>
+          <td>20</td>
+          <td>10</td>
+          <td>5</td>
+          <td>1</td>
+        </tr>
+      </table>
+      </div>
+    </div>
+   
+    
+  </main>
+    
+    <script src="./index.js" text="text/javascript"></script>
+  </body>
 </html>
